@@ -1,0 +1,211 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+h1{
+    font-size: 50px;
+    color: #02182B;
+    font-family: 'Pacifico', cursive;
+}
+#div_opcoes_menu a{
+    color: #02182B;
+    text-decoration: none;
+    margin: 0 8px;
+    /* background-color: red; */
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#div_opcoes_menu a:hover{
+    background: #02182B;
+    color: #fff;
+}
+#container{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #448FA3;
+    border-radius: 20px;
+    padding: 20px;
+}
+#titulo{
+    text-align: center;
+}
+#linha01{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#linha02{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#nome, #telefone, #email, #cargo, #salario{
+    flex: 1;
+    margin: 10px;
+    height: 30px;
+    min-width: 200px;
+    border-radius: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+#btn_salvar{
+    flex: 0.5;
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: #02182B;
+    color: #fff;
+    cursor: pointer;
+}
+#titulo_lista h2{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+#tabela{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#tabela th{
+    border-bottom: 2px solid #02182B;
+    text-align: left;
+    padding: 8px 5px;
+    font-size: 18px;
+}
+#tabela td{
+    border-bottom: 2px solid #02182B;
+    padding: 5px;
+}
+#container_tabela{
+    height: 400px;
+    width: 80%;
+    max-width: 800px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+#modal_content {
+    background: rgb(255, 255, 255);
+    margin: 100px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 540px;
+    border-radius: 10px;
+}
+#msg{
+    font-size: 20px;
+}
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.e_color_btn_modal{
+    color: #D7263D;
+}
+.s_color_btn_modal{
+    color: #0197F6;
+}
+.close:hover, .close:focus{
+    color: #02182B;
+    text-decoration: none;
+    cursor: pointer;
+}
+span{
+    line-height: 25px;
+}
+#container_filtro{
+    display: none;
+    background-color: #02182B;
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+#container_filtro h3{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+#filtro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#nome_filtro, #cargo_filtro, #salario_filtro, #btn_filtrar{
+    height: 25px;
+    margin: 5px;
+    flex: 1;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn_filtrar{
+    max-width: 100px;
+    min-width: 80px;
+    flex: 1;
+    background: #448FA3;
+    cursor: pointer;
+}
+.btn_excluir{
+    width: 30px;
+    height: 25px;
+    background: #D7263D;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn_excluir:hover{
+    background: #dd7e7e;
+}
+#exibir_filtro{
+    margin: 10px auto 0 auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: end;
+}
+#btn_exibir_filtro{
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #465775;
+    color: #fff;
+    cursor: pointer;
+    border-color: #6e6e6e;
+}

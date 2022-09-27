@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Casdastro de Funcionarios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body onload="exibeListaFuncionarios()">
+    
+    <nav>
+        <div id="div_logo">
+            <h1>Logo</h1>
+        </div>
+        <div id="div_opcoes_menu">
+            <a href="index.html">Cadastro</a>
+            <a href="index.html">Consulta</a>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="titulo"><h2>Cadastro De Novo Funcionário</h2></div>
+        <div id="linha01">
+            <input type="text" id="nome" placeholder=" Nome"></input>
+
+            <input type="text" id="telefone" placeholder=" Telefone"></input>
+
+            <input type="text" placeholder=" E-mail" id="email"/>
+        </div>
+
+        <div id="linha02">
+            <select id="cargo">
+                <option value="">Cargo</option>
+                <option value="1">Programador</option>
+                <option value="2">Analista de Sistemas</option>
+                <option value="3">UX/UI Designer</option>
+                <option value="4">Grente de Equipe</option>
+              </select>
+            <input type="number" placeholder=" Salário" id="salario" />
+            <button type="button" id="btn_salvar" onclick="cadastrarFuncionario()">Cadastrar</button>
+        </div>
+    </div>
+    <div id="exibir_filtro">
+        <button id="btn_exibir_filtro" onclick="exibeFiltro()">Exibir Filtros</button>
+    </div>
+    <div id="container_filtro">
+        <h3>Filtros</h3>
+        <div id="filtro">
+            <input type="text" id="nome_filtro" placeholder=" Nome"></input>
+            <select id="cargo_filtro">
+                <option value="">Cargo</option>
+                <option value="1">Programador</option>
+                <option value="2">Analista de Sistemas</option>
+                <option value="3">UX/UI Designer</option>
+                <option value="4">Grente de Equipe</option>
+              </select>
+              <input type="number" placeholder=" Salário" id="salario_filtro" />
+              <button type="button" id="btn_filtrar" onclick="pesquisarFuncionarios()">Filtrar</button>
+        </div>
+    </div>
+
+    <div id="titulo_lista">
+        <h2>Lista De Funcionarios Cadastrados</h2>
+    </div>
+    <div id="container_tabela">
+        <table id="tabela" >
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Salário</th>
+                <th></th>
+              </tr>
+            </thead>
+            <div id="container_dados_tb">
+                <tbody id="lista_funcionarios_tb"></tbody>
+                </tbody>
+            </div>
+
+        </table>
+    </div>
+    <div id="gravacao" class="modal">
+        <div id="modal_content">
+            <span class="close">&times;</span>
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
