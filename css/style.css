@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +5,11 @@
 }
 body{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #3b3b3b;
+    color: #e6e8e3;
+}
+select, input, button{
+    border: none;
 }
 nav{
     display: flex;
@@ -20,27 +24,17 @@ nav{
 }
 h1{
     font-size: 50px;
-    color: #02182B;
+    color: #26979f;
     font-family: 'Pacifico', cursive;
 }
-#div_opcoes_menu a{
-    color: #02182B;
-    text-decoration: none;
-    margin: 0 8px;
-    /* background-color: red; */
-    padding: 5px;
-    font-size: 18px;
-    border-radius: 10px;
-}
-#div_opcoes_menu a:hover{
-    background: #02182B;
-    color: #fff;
+h2{
+    margin-bottom: 1rem;
 }
 #container{
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
-    background: #448FA3;
+    background: #0a516d;
     border-radius: 20px;
     padding: 20px;
 }
@@ -62,17 +56,17 @@ h1{
 #nome, #telefone, #email, #cargo, #salario{
     flex: 1;
     margin: 10px;
-    height: 30px;
+    height: 35px;
     min-width: 200px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 5px;
     cursor: pointer;
 }
 #btn_salvar{
     flex: 0.5;
     margin: 10px;
-    height: 30px;
-    border-radius: 10px;
+    height: 35px;
+    border-radius: 5px;
     border-color: rgb(255, 255, 255);
     background: #02182B;
     color: #fff;
@@ -126,6 +120,7 @@ h1{
 }
 #msg{
     font-size: 20px;
+    color: #02182B;
 }
 .close {
     float: right;
@@ -148,7 +143,7 @@ span{
 }
 #container_filtro{
     display: none;
-    background-color: #02182B;
+    background-color: #0a516d;
     width: 80%;
     max-width: 800px;
     margin: 10px auto;
@@ -166,21 +161,21 @@ span{
     flex-wrap: wrap;
 }
 #nome_filtro, #cargo_filtro, #salario_filtro, #btn_filtrar{
-    height: 25px;
+    height: 35px;
     margin: 5px;
     flex: 1;
     border-radius: 5px;
     border-color: rgb(255, 255, 255);
     padding-left: 5px;
-    border-radius: 10px;
     cursor: pointer;
 }
 #btn_filtrar{
     max-width: 100px;
     min-width: 80px;
     flex: 1;
-    background: #448FA3;
+    background: #02182B;
     cursor: pointer;
+    color: #e6e8e3;
 }
 .btn_excluir{
     width: 30px;
@@ -204,7 +199,7 @@ span{
     width: 120px;
     height: 25px;
     border-radius: 8px;
-    background-color: #465775;
+    background-color: #018790;
     color: #fff;
     cursor: pointer;
     border-color: #6e6e6e;
